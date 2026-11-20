@@ -9,6 +9,8 @@ PC as usual for its buttons and sticks.
 **Download the prebuilt receiver and controller firmware.**
 [Open Puck v0.1.0 experimental release](https://github.com/Saniro1/NRF52840-LSM6DVS-OPEN-PUCK/releases/tag/v0.1.0)
 
+[Firmware files and SHA-256 checksums](releases/v0.1.0/)
+
 ## 1. Identify and flash the USB receiver
 
 If your receiver has a UF2 bootloader, connect it with a USB data cable, enter
@@ -19,11 +21,11 @@ drive. The drive normally disappears as the receiver restarts.
 
 | Confirmed receiver bootloader | Release file |
 | --- | --- |
-| SlimeNRF ProMicro bootloader, Board-ID `nRF52840-SlimeNRFTracker-ProMicro` | `receiver-slime-pro-micro.uf2` |
-| Standard nRF52840 UF2, MBR-only layout with application at `0x1000` | `receiver-mbr-0x1000.uf2` |
-| Standard nRF52840 UF2 with S140 v6.x and application at `0x26000` | `receiver-s140-v6-0x26000.uf2` |
-| Standard nRF52840 UF2 with S140 v7.x and application at `0x27000` | `receiver-s140-v7-0x27000.uf2` |
-| Nordic nRF52840 USB Dongle (PCA10059), stock Nordic DFU | `receiver-pca10059.hex`, packaged as shown below |
+| SlimeNRF ProMicro bootloader, Board-ID `nRF52840-SlimeNRFTracker-ProMicro` | [`receiver-slime-pro-micro.uf2`](releases/v0.1.0/receiver-slime-pro-micro.uf2?raw=true) |
+| Standard nRF52840 UF2, MBR-only layout with application at `0x1000` | [`receiver-mbr-0x1000.uf2`](releases/v0.1.0/receiver-mbr-0x1000.uf2?raw=true) |
+| Standard nRF52840 UF2 with S140 v6.x and application at `0x26000` | [`receiver-s140-v6-0x26000.uf2`](releases/v0.1.0/receiver-s140-v6-0x26000.uf2?raw=true) |
+| Standard nRF52840 UF2 with S140 v7.x and application at `0x27000` | [`receiver-s140-v7-0x27000.uf2`](releases/v0.1.0/receiver-s140-v7-0x27000.uf2?raw=true) |
+| Nordic nRF52840 USB Dongle (PCA10059), stock Nordic DFU | [`receiver-pca10059.hex`](releases/v0.1.0/receiver-pca10059.hex?raw=true), packaged as shown below |
 
 Confirm the layout before flashing. SuperMini and nice!nano-compatible boards
 can ship with different bootloaders. The chip name alone does not determine
@@ -53,9 +55,9 @@ controller board's established double-reset UF2 procedure.
 
 | Your Fix42 mounting | Release file |
 | --- | --- |
-| Normal, USB-C up | `transmitter-fix42-normal.uf2` |
-| Inverted, USB-C down | `transmitter-fix42-inverted.uf2` |
-| Handheld | `transmitter-fix42-handheld.uf2` |
+| Normal, USB-C up | [`transmitter-fix42-normal.uf2`](releases/v0.1.0/transmitter-fix42-normal.uf2?raw=true) |
+| Inverted, USB-C down | [`transmitter-fix42-inverted.uf2`](releases/v0.1.0/transmitter-fix42-inverted.uf2?raw=true) |
+| Handheld | [`transmitter-fix42-handheld.uf2`](releases/v0.1.0/transmitter-fix42-handheld.uf2?raw=true) |
 
 Keep your working wired UF2 so you can restore it if needed. The transmitter
 uses the Fix42 sensor calibration, VQF correction, deadzone, and axis mapping.
